@@ -766,7 +766,7 @@ section,
 .section {
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 60px 0;
+  padding: 60px;
   scroll-margin-top: 120px;
   overflow: clip;
 }
@@ -1356,7 +1356,7 @@ section,
 # Tabs Section
 --------------------------------------------------------------*/
 .tabs {
-  overflow: hidden;
+  overflow: visible;
 }
 
 .tabs .nav-tabs {
