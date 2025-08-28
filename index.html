@@ -9,7 +9,7 @@
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="assets/img/OpVerse/OpVerse_Logo_Black_PIC.png" rel="icon">
+  <link href="assets\img\OpVerse\logo_square.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
@@ -73,17 +73,17 @@
         <nav id="navmenu" class="navmenu">
           <ul>
             <li><a href="#hero" class="active">Home</a></li>
-            <li><a href="#about">About</a></li>
+            <li><a href="#about">About us</a></li>
             <!-- <li><a href="#services">Platform</a></li> -->
-            <li class="dropdown"><a href="service-details.html"><span>Platform</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <li class="dropdown"><a href="#service"><span>Platform</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
-                <li><a href="#">Immersive 3D VR Anatomy & Surgery Learning</a></li>
-                <li><a href="#">VATS Port Planning</a></li>
-                <li><a href="#">Needle Path Planning</a></li>
+                <li><a href="#service?tab=sd-tab-1">Immersive 3D VR Anatomy & Surgery Learning</a></li>
+                <li><a href="#service?tab=sd-tab-2">VATS Port Planning</a></li>
+                <li><a href="#service?tab=sd-tab-3">Needle Path Planning</a></li>
               </ul>
             </li>
             <!-- <li><a href="#departments">Media&Exhibitions</a></li> -->
-            <li class="dropdown"><a href="#news"><span>Media&Exhibitions</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <li class="dropdown"><a href="#news"><span>Media & Exhibitions</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
                 <!-- <li class="dropdown"><a href="#news"><span>Healthcare Expo TAIWAN</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                   <ul>
@@ -91,10 +91,10 @@
                     <li><a href="#news">2025</a></li>
                   </ul>
                 </li> -->
-                <li><a href="#news">Healthcare Expo TAIWAN 2024</a></li>
-                <li><a href="#news">Healthcare Expo TAIWAN 2025</a></li>
-                <li><a href="#news">BIO Asia</a></li>
-                <li><a href="#news">臺灣醫學週</a></li>
+                <li><a href="#news?tab=tabs-tab-1">Healthcare Expo Taiwan 2024</a></li>
+                <li><a href="#news?tab=tabs-tab-2">Healthcare Expo Taiwan 2025</a></li>
+                <li><a href="#news?tab=tabs-tab-3">BIO Asia</a></li>
+                <li><a href="#news?tab=tabs-tab-4">台灣醫學周</a></li>
               </ul>
             </li>
             <li><a href="#doctors">Team Members</a></li>
@@ -119,16 +119,29 @@
       <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
 
         <div class="carousel-item active">
-          <img src="assets/img/hero-carousel/hero-carousel-1.jpg" alt="">
+          <img src="assets\img\OpVerse\Gallary\LINE_ALBUM_20241109-10 2024 醫學週_250829_1.jpg" alt="">
           <div class="container">
             <h2>Wellcome to OpVerse</h2>
-            <p>We leverage advanced 3D visualization and extended reality (XR) to help physicians accurately locate lung tumors—without relying on expensive hybrid operating rooms or intraoperative imaging systems.</p>
+            <p>OpVerse combines advanced 3D visualization with extended reality (XR) to deliver three core systems: immersive VR anatomy learning, 
+              VATS port planning, and needle path planning. Together, they empower surgeons and trainees to better understand patient-specific anatomy, 
+              simulate procedures, and design safer, more efficient surgical strategies—without reliance on costly infrastructure.</p>
+            <a href="#about" class="btn-get-started">Read More</a>
+          </div>
+        </div><!-- End Carousel Item -->
+
+        <div class="carousel-item active">
+          <img src="assets\img\OpVerse\Gallary\LINE_ALBUM_20231130-2023123台灣醫療科技展_250829_5.jpg" alt="">
+          <div class="container">
+            <h2>Immersive 3D VR Anatomy & Surgery Learning</h2>
+            <p>OpVerse combines advanced 3D visualization with extended reality (XR) to deliver three core systems: immersive VR anatomy learning, 
+              VATS port planning, and needle path planning. Together, they empower surgeons and trainees to better understand patient-specific anatomy, 
+              simulate procedures, and design safer, more efficient surgical strategies—without reliance on costly infrastructure.</p>
             <a href="#about" class="btn-get-started">Read More</a>
           </div>
         </div><!-- End Carousel Item -->
 
         <div class="carousel-item">
-          <img src="assets/img/hero-carousel/hero-carousel-2.jpg" alt="">
+          <img src="assets\img\OpVerse\OR\S__425754658_0.jpg" alt="">
           <div class="container">
             <h2>Needle Path Planning with XR Guidance</h2>
             <p>During preoperative dye injection, clinicians must navigate around vital structures such as blood vessels and bones to reach the tumor site. Our system enables intuitive route planning in a 3D XR environment, helping physicians visualize the safest and most direct path to the lesion—reducing risk and increasing confidence.</p>
@@ -137,7 +150,7 @@
         </div><!-- End Carousel Item -->
 
         <div class="carousel-item">
-          <img src="assets/img/hero-carousel/hero-carousel-3.jpg" alt="">
+          <img src="assets\img\OpVerse\OR\VAT_1.jpg" alt="">
           <div class="container">
             <h2>VATS Port Planning</h2>
             <p>For thoracoscopic or minimally invasive surgery, the location of incisions is critical for visibility, instrument maneuverability, and patient recovery. Our platform allows surgeons to simulate multiple port placements in a 3D patient-specific model, helping evaluate workspace feasibility and choose the most ergonomic and effective entry points.</p>
@@ -160,7 +173,7 @@
     </section><!-- /Hero Section -->
 
     <!-- Featured Services Section -->
-    <section id="featured-services" class="featured-services section">
+    <!-- <section id="featured-services" class="featured-services section">
 
       <div class="container">
 
@@ -172,7 +185,7 @@
               <h4><a href="" class="stretched-link">Accurate, Intuitive Tumor Localization</a></h4>
               <p>Our XR platform provides a real-time, spatially-anchored visualization of lung tumors in 3D, enabling surgeons to precisely understand tumor positions relative to patient anatomy—even before the incision.</p>
             </div>
-          </div><!-- End Service Item -->
+          </div>
 
           <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
             <div class="service-item position-relative">
@@ -180,7 +193,7 @@
               <h4><a href="" class="stretched-link">Without Hybrid OR Dependency</a></h4>
               <p>Traditionally, tumor localization relies on costly intraoperative imaging and complex hybrid OR setups. We eliminate that dependency, making precision-guided surgery accessible to more hospitals and patients.</p>
             </div>
-          </div><!-- End Service Item -->
+          </div> 
 
           <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
             <div class="service-item position-relative">
@@ -188,7 +201,7 @@
               <h4><a href="" class="stretched-link">Lower the Learning Curve for Surgical Trainees</a></h4>
               <p>XR guidance helps young residents and junior surgeons rapidly develop spatial understanding and procedural confidence. Complex lung resections become more approachable, structured, and teachable.</p>
             </div>
-          </div><!-- End Service Item -->
+          </div> 
 
           <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
             <div class="service-item position-relative">
@@ -196,13 +209,13 @@
               <h4><a href="" class="stretched-link">Reduced Equipment Cost, Increased Surgical Confidence</a></h4>
               <p>Empower surgical teams with enhanced spatial awareness and reduce the need for real-time imaging or navigational hardware. Optimize resource use while maintaining precision.</p>
             </div>
-          </div><!-- End Service Item -->
+          </div> 
 
         </div>
 
       </div>
 
-    </section><!-- /Featured Services Section -->
+    </section> -->
 
     <!-- Call To Action Section -->
     <!-- <section id="call-to-action" class="call-to-action section accent-background">
@@ -259,6 +272,182 @@
       </div>
 
     </section><!-- /About Section -->
+
+    <section id="service" class="service-details section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>PLATFORM<br></h2>
+      </div>
+
+      <div class="container">
+        <div class="row gy-4">
+          
+          <!-- Left: tab nav -->
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="services-list" role="tablist">
+              <a class="active" data-bs-toggle="tab" href="#sd-tab-1" role="tab" aria-controls="sd-tab-1" aria-selected="true">
+                Immersive 3D VR Anatomy & Surgery Learning
+              </a>
+              <a data-bs-toggle="tab" href="#sd-tab-2" role="tab" aria-controls="sd-tab-2" aria-selected="false">
+                VATS Port Planning
+              </a>
+              <a data-bs-toggle="tab" href="#sd-tab-3" role="tab" aria-controls="sd-tab-3" aria-selected="false">
+                Needle Path Planning
+              </a>
+            </div>
+
+            <!-- (可選) 左側小標與說明，保持原風格 -->
+            <div class="mt-3 text-center">
+              <img id="expect-image" src="assets\img\features.jpg" 
+                  alt="Immersive 3D VR Anatomy" 
+                  class="img-fluid rounded shadow-sm" 
+                  style="max-width: 400px;">
+            </div>
+          </div>
+          
+          
+
+          <!-- Right: tab content -->
+          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+            <div class="tab-content">
+
+              <!-- Tab 1 -->
+              <div class="tab-pane fade show active" id="sd-tab-1" role="tabpanel">
+                <!-- <img src="assets\img\services.jpg" alt="Immersive 3D VR Anatomy" class="img-fluid services-img" style="max-width: 600px; height: auto;"> -->
+                <h3>Immersive 3D VR Anatomy & Surgery Learning</h3>
+                <p class="fst-italic">
+                  The <strong>OpVerse Immersive 3D VR Anatomy & Surgery Learning Platform</strong> 
+                  transforms traditional medical education into an interactive, patient-specific experience. 
+                  By combining <strong>extended reality (XR)</strong> with <strong>high-fidelity 3D reconstructions from medical imaging</strong>, 
+                  we create a virtual operating room where students and clinicians can explore, manipulate, and rehearse complex anatomy and surgical procedures in unprecedented detail.
+                </p>
+
+                <h4>Core Values</h4>
+                <p class="fst-italic">
+                  The OpVerse platform delivers an <strong>immersive learning experience</strong> that brings anatomy and surgical training into a virtual operating room. 
+                  With VR/AR headsets, learners can freely explore organs and pathologies from every angle, strengthening their spatial understanding in a way that textbooks and 2D images cannot. 
+                  By reconstructing <strong>patient-specific 3D models</strong> from CT and MRI data, the system also enables personalized planning and simulation, ensuring that every training session or preoperative rehearsal reflects real clinical challenges.
+                </p>
+
+                <p class="fst-italic">
+                  Beyond exploration, the platform emphasizes <strong>interactive practice</strong>, allowing users to zoom, rotate, dissect, and annotate structures while rehearsing actual surgical steps. 
+                  This hands-on engagement reinforces anatomical knowledge and builds procedural confidence. 
+                  Designed for collaboration, it supports <strong>cross-disciplinary education</strong> by bringing together medical students, residents, radiologists, and engineers in the same XR space. 
+                  Finally, its <strong>portability and cost-effectiveness</strong> make advanced surgical education accessible anywhere—requiring only a standard PC and an XR device, without the need for cadavers, labs, or costly hybrid operating rooms.
+                </p>
+
+                <h4>Designed For</h4>
+                <ul class="checklist">
+                  <li><i class="bi bi-check-circle"></i> <strong>Medical Students & Residents:</strong> Build 3D anatomical intuition and confidence faster.</li>
+                  <li><i class="bi bi-check-circle"></i> <strong>Clinical Teams:</strong> Collaboratively plan safe surgical strategies pre-operatively.</li>
+                  <li><i class="bi bi-check-circle"></i> <strong>Academic & Training Centers:</strong> Deliver next-generation, interactive teaching and remote education.</li>
+                </ul>
+
+                <h4>Impact</h4>
+                <p class="fst-italic">
+                  Already adopted in teaching hospitals, OpVerse VR training has been shown to 
+                  <strong>shorten the learning curve, improve surgical preparedness, and enhance confidence in complex procedures</strong>. 
+                  By bridging medical expertise with immersive technology, we are redefining surgical education — from 
+                  <em>static learning</em> to <em>dynamic, interactive, and immersive training experiences</em>.
+                </p>
+              </div>
+
+              <!-- Tab 2 -->
+              <div class="tab-pane fade" id="sd-tab-2" role="tabpanel">
+                <!-- <img src="assets/img/services/vats-planning.jpg" alt="VATS Port Planning" class="img-fluid services-img" style="max-width: 600px; height: auto;"> -->
+                <h3>VATS Port Planning</h3>
+                <p class="fst-italic">
+                  The <strong>OpVerse VATS Port Planning Module</strong> empowers surgeons to design and evaluate incision strategies for 
+                  video-assisted thoracoscopic surgery (VATS). By leveraging <strong>extended reality (XR)</strong> with patient-specific 
+                  3D reconstructions, our platform simulates multiple port placements, helping surgeons choose the most ergonomic and 
+                  effective approach to optimize visibility, instrument access, and patient recovery.
+                </p>
+
+                <h4>Core Values</h4>
+                <p class="fst-italic">
+                  Effective port placement is critical for successful minimally invasive thoracic surgery. The OpVerse system allows surgeons 
+                  to virtually test different incision sites on a patient’s 3D model before entering the operating room. This process improves 
+                  <strong>preoperative planning</strong> by clarifying anatomical relationships, evaluating instrument angles, and ensuring 
+                  that chosen entry points maximize visibility while minimizing risk. By simulating multiple strategies, surgical teams can 
+                  select the safest and most efficient configuration tailored to each case.
+                </p>
+
+                <p class="fst-italic">
+                  Beyond planning, our platform enhances <strong>ergonomic assessment and team training</strong>. Surgeons can anticipate 
+                  instrument reach and hand positioning, while residents learn best practices in a safe, interactive environment. This 
+                  collaborative XR space fosters discussion between attending surgeons, trainees, and supporting staff, aligning the entire 
+                  team around a well-tested operative plan. By lowering the trial-and-error factor, VATS procedures become more predictable, 
+                  efficient, and confidence-driven.
+                </p>
+
+                <h4>Designed For</h4>
+                <ul class="checklist">
+                  <li><i class="bi bi-check-circle"></i> <strong>Thoracic Surgeons:</strong> Optimize incision placement for better visibility, safety, and outcomes.</li>
+                  <li><i class="bi bi-check-circle"></i> <strong>Surgical Residents:</strong> Practice port planning in an XR environment before entering the OR.</li>
+                  <li><i class="bi bi-check-circle"></i> <strong>Surgical Teams:</strong> Collaboratively evaluate ergonomic setups and coordinate operative strategies.</li>
+                </ul>
+
+                <h4>Impact</h4>
+                <p class="fst-italic">
+                  With OpVerse VATS Port Planning, hospitals can <strong>reduce operative uncertainty, shorten setup time, and 
+                  improve ergonomics for minimally invasive thoracic procedures</strong>. By bridging patient-specific imaging with 
+                  immersive simulation, our system enables safer, more efficient surgeries—empowering teams to move from reactive 
+                  adjustments in the OR to proactive, well-planned strategies that improve patient recovery and surgical confidence.
+                </p>
+              </div>
+
+
+              <!-- Tab 3 -->
+              <div class="tab-pane fade" id="sd-tab-3" role="tabpanel">
+                <!-- <img src="assets/img/services/needle-planning.jpg" alt="Needle Path Planning" class="img-fluid services-img" style="max-width: 600px; height: auto;"> -->
+                <h3>Needle Path Planning</h3>
+                <p class="fst-italic">
+                  The <strong>OpVerse Needle Path Planning Module</strong> provides clinicians with an immersive XR environment 
+                  to design and validate preoperative dye injection or biopsy trajectories. By reconstructing 
+                  <strong>patient-specific 3D anatomy</strong>, the platform helps surgeons plan safe, accurate routes 
+                  that avoid critical structures such as vessels, bronchi, and ribs—improving precision and patient safety.
+                </p>
+
+                <h4>Core Values</h4>
+                <p class="fst-italic">
+                  Accurate needle placement is one of the most delicate challenges in thoracic surgery. The OpVerse system 
+                  enhances <strong>spatial awareness and risk reduction</strong> by allowing surgeons to visualize potential 
+                  needle paths directly within a 3D model of the patient. With clear visibility of tumor location relative to 
+                  surrounding anatomy, clinicians can identify the safest and most direct route to the target while avoiding 
+                  vital structures. This capability improves confidence during planning and minimizes the chance of 
+                  intraoperative surprises.
+                </p>
+
+                <p class="fst-italic">
+                  Beyond planning, the module supports <strong>training and collaboration</strong>. Junior clinicians can 
+                  rehearse different trajectory options and immediately understand the implications of each choice, while 
+                  senior surgeons and multidisciplinary teams use the same XR space to align on the optimal strategy. 
+                  Because the solution is <strong>portable and infrastructure-light</strong>, hospitals can adopt it widely 
+                  without the need for expensive imaging suites—making precise preoperative planning accessible to more 
+                  institutions and patients.
+                </p>
+
+                <h4>Designed For</h4>
+                <ul class="checklist">
+                  <li><i class="bi bi-check-circle"></i> <strong>Interventional Radiologists & Thoracic Surgeons:</strong> Plan safe and precise injection or biopsy routes.</li>
+                  <li><i class="bi bi-check-circle"></i> <strong>Residents & Trainees:</strong> Practice trajectory design in a controlled XR environment with immediate feedback.</li>
+                  <li><i class="bi bi-check-circle"></i> <strong>Multidisciplinary Teams:</strong> Collaborate on patient-specific strategies to reduce risks and improve outcomes.</li>
+                </ul>
+
+                <h4>Impact</h4>
+                <p class="fst-italic">
+                  With OpVerse Needle Path Planning, clinicians can <strong>increase accuracy, reduce complications, and 
+                  build confidence in delicate preoperative interventions</strong>. By transforming 2D imaging into 
+                  intuitive 3D simulation, the system empowers surgical teams to move from estimation to evidence-based 
+                  planning—delivering safer, faster, and more reliable procedures for every patient.
+                </p>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Stats Section -->
 
@@ -507,14 +696,16 @@
             }
           </script>
           <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-1.jpg"><img src="assets/img/gallery/gallery-1.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-2.jpg"><img src="assets/img/gallery/gallery-2.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-3.jpg"><img src="assets/img/gallery/gallery-3.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-4.jpg"><img src="assets/img/gallery/gallery-4.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-5.jpg"><img src="assets/img/gallery/gallery-5.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-6.jpg"><img src="assets/img/gallery/gallery-6.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-7.jpg"><img src="assets/img/gallery/gallery-7.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-8.jpg"><img src="assets/img/gallery/gallery-8.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets\img\OpVerse\OR\LINE_ALBUM_2025.02.17 虛擬定位試做第三例_250829_1.jpg"><img src="assets\img\OpVerse\OR\LINE_ALBUM_2025.02.17 虛擬定位試做第三例_250829_1.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets\img\OpVerse\Gallary\LINE_ALBUM_2025711台視「熱線追蹤」AI新時代系列報導-元宇宙採訪_250829_2.jpg"><img src="assets\img\OpVerse\Gallary\LINE_ALBUM_2025711台視「熱線追蹤」AI新時代系列報導-元宇宙採訪_250829_2.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets\img\OpVerse\Gallary\LINE_ALBUM_2025724-27 BioAsia亞洲生技展_250829_1.jpg"><img src="assets\img\OpVerse\Gallary\LINE_ALBUM_2025724-27 BioAsia亞洲生技展_250829_1.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets\img\OpVerse\Gallary\LINE_ALBUM_20231130-2023123台灣醫療科技展_250829_1.jpg"><img src="assets\img\OpVerse\Gallary\LINE_ALBUM_20231130-2023123台灣醫療科技展_250829_1.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets\img\OpVerse\Gallary\LINE_ALBUM_20231130-2023123台灣醫療科技展_250829_2.jpg"><img src="assets\img\OpVerse\Gallary\LINE_ALBUM_20231130-2023123台灣醫療科技展_250829_2.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets\img\OpVerse\Gallary\LINE_ALBUM_20241109-10 2024 醫學週_250829_1.jpg"><img src="assets\img\OpVerse\Gallary\LINE_ALBUM_20241109-10 2024 醫學週_250829_1.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets\img\OpVerse\Gallary\LINE_ALBUM_20241109-10 2024 醫學週_250829_1.jpg"><img src="assets\img\OpVerse\Gallary\LINE_ALBUM_20241109-10 2024 醫學週_250829_1.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets\img\OpVerse\Gallary\LINE_ALBUM_20231130-2023123台灣醫療科技展_250829_3.jpg"><img src="assets\img\OpVerse\Gallary\LINE_ALBUM_20231130-2023123台灣醫療科技展_250829_3.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets\img\OpVerse\Gallary\LINE_ALBUM_2025711台視「熱線追蹤」AI新時代系列報導-元宇宙採訪_250829_1.jpg"><img src="assets\img\OpVerse\Gallary\LINE_ALBUM_2025711台視「熱線追蹤」AI新時代系列報導-元宇宙採訪_250829_1.jpg" class="img-fluid" alt=""></a></div>
+          </div>
           </div>
           <div class="swiper-pagination"></div>
         </div>
@@ -604,6 +795,8 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/tools.js"></script>
+  
 
 </body>
 
