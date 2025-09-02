@@ -1,26 +1,31 @@
 document.addEventListener('DOMContentLoaded', () => {
   const images = {
-    "sd-tab-1": {
-      src: "assets/img/features.jpg",
-      alt: "Immersive 3D VR Anatomy"
-    },
-    "sd-tab-2": {
-      src: "assets/img/OpVerse/OR/VAT_3.jpg",
-      alt: "VATS Port Planning"
-    },
-    "sd-tab-3": {
-      src: "assets/img/OpVerse/OR/path_2.jpg",
-      alt: "Needle Path Planning"
-    }
+    "sd-tab-1": [
+      { src: "assets/img/OpVerse/OR/edu1.png", alt: "Immersive 3D VR Anatomy - 1" },
+      { src: "assets/img/OpVerse/OR/edu3.png", alt: "Immersive 3D VR Anatomy - 2" }
+    ],
+    "sd-tab-2": [
+      { src: "assets/img/OpVerse/OR/VAT_3.jpg", alt: "VATS Port Planning - 1" },
+      { src: "assets/img/OpVerse/OR/VAT_2.jpg", alt: "VATS Port Planning - 2" }
+    ],
+    "sd-tab-3": [
+      { src: "assets/img/OpVerse/OR/path_2.jpg", alt: "Needle Path Planning - 1" },
+      { src: "assets/img/OpVerse/OR/path_1.jpg", alt: "Needle Path Planning - 2" }
+    ]
   };
 
 document.querySelectorAll('.services-list a').forEach(tab => {
     tab.addEventListener('shown.bs.tab', e => {
       const target = e.target.getAttribute('href').substring(1); // e.g. sd-tab-1
-      const imgEl = document.getElementById('expect-image');
-      if (images[target] && imgEl) {
-        imgEl.src = images[target].src;
-        imgEl.alt = images[target].alt;
+      const img1 = document.getElementById('expect-image1');
+      const img2 = document.getElementById('expect-image2');
+
+      if (images[target]) {
+        img1.src = images[target][0].src;
+        img1.alt = images[target][0].alt;
+
+        img2.src = images[target][1].src;
+        img2.alt = images[target][1].alt;
       }
     });
   });
